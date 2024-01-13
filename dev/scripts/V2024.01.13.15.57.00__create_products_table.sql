@@ -4,7 +4,6 @@ CREATE TABLE Products (
                          ProductName varchar(50),
                          ProductType smallint,
                          ProductDetailsId smallint,
-                         City varchar(255),
                          UpdateDate datetime,
                          CreateDate datetime
 );
