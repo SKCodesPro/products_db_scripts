@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FLYWAY_HOME="flyway"
+FLYWAY_HOME="/opt/flyway-10.5.0/"
 function prop {
     flyway_prop=$2
     grep "^${1}" "$flyway_prop"|cut -d'=' -f2
