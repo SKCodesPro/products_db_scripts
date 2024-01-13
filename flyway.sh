@@ -9,8 +9,7 @@ function prop {
 operation=$1
 echo "Select a Database to execute migration"
 echo "1. Dev"
-read db_selected
-echo $db_selected
+read -r db_selected
 
 case $db_selected in
   1)
@@ -22,7 +21,6 @@ case $db_selected in
   esac
 
   flyway_location="$directory/flyway.conf"
-  echo $flyway_location
 # schema=$(prop "flyway.schema" $flyway_location)
 user=$(prop "flyway.user" $flyway_location)
 password=$(prop "flyway.password" $flyway_location)
